@@ -1,0 +1,1 @@
+This is the first version of our project smart programmable plug. You can have the list of our modules used in the equipments files. For the first prototype we made we used the IoT Blynk platform. Thanks for your contributions.
