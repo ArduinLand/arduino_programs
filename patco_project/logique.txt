@@ -1,0 +1,11 @@
+Alors la logique appliquée pour la mise en place de ce système est la suivante : 
+ Nous allons faire fonctionner notre système sur une batterie 12v ou sur secteur (qui recharge la batterie) nous permettant ainsi en cas de coupure de pouvoir basculer sur l'alimentation offerte par la batterie.
+ Lorsqu'il y a coupure une alarme est activée (BUZZER) et nous envoyons un message à l'Administrateur système du fait qu'il y ait eu coupure et qu'il y ait possibilité de surchauffe des serveurs car les climatiseurs ne sont pas fonctionnels. Cependant il peut avoir le courant mais un souci au niveau des climatiseurs les rendant ainsi non fonctionnels. Dans ce cas nous passerons par une détection de chaleur (température) car les serveurs n'étant pas rafraichit vont progressivement chauffer et une fois notre température seuil atteinte, nous envoyons également un message à l'admin sys lui spécifiant un problème avec les climatiseurs de sorte à prévenir d'une éventuelle incendie due à la surchauffe des serveurs.
+
+ Tout cela se résume en deux cas d'utilisation 
+ 	1. Coupure de courant : fonctionnement des serveurs par le biais des onduleurs
+ 	2. Aucune coupure de courant mais problème au niveau des climatiseurs : les serveurs fonctionnant toujours vont progressivement chauffer
+
+
+ 	Pour la première version nous allons fixer dès le départ les intervalles, le numéro de l'admin sys.
+ 	Pour les versions ultérieures, penser à une application mobile dans laquelle l'utilisateur pourrait entrer les différentes informations dans les préférences
