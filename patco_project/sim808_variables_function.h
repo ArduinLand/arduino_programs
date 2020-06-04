@@ -37,8 +37,9 @@ void didWeReceiveAdminSms(){
 
       if(phone == PHONE_ADMIN){
         // if we received a message from the admin
+        modeDetectionAndAction();
       }
-      modeDetectionAndAction();
+      
    }
 
 }
@@ -71,7 +72,8 @@ void buyFreeSmsPack(){
 }
 
 void modeDetectionAndAction(){
-  //----------------------------------------------------- DÉTECTION DU MODE ET L'ACTION À EXÉCUTER --------------------------------------------------------------------------------------
+  //----------------------------------------------------- DETECTING THE INSTRUCTION TO EXECUTE--------------------------------------------------------------------------------------
+  // Admin can stop the alarm and turn on or off the AC by sending a SMS
   char* result[4];
   String mode; int index = 0;
   char *res;
