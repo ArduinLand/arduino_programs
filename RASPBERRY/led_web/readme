@@ -1,0 +1,8 @@
+Le port GPIO par defaut est le port 40
+L'adresse ip (l'host) est à changer par votre ip locale ou 127.0.0.1
+
+le dossier "templates" contient les pages html et "static" le/les fichiers CSS
+(mais il est vide :)  )
+
+Le module Flask est requis ( "pip install flask" pour l'installer via
+un terminal)
